@@ -1,14 +1,26 @@
-# Astro Starter Kit: Basics
+# 🌳 Kokoro - Página Web Oficial
 
-```sh
-npm create astro@latest -- --template basics
-```
+**Kokoro** es una empresa dedicada a la creación de juguetes de madera diseñados especialmente para niños dentro del espectro autista. Nuestro enfoque combina diseño artesanal, materiales sostenibles y un profundo respeto por la neurodiversidad.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este repositorio contiene el código fuente de su página web informativa, actualmente en desarrollo, cuyo objetivo es dar visibilidad al trabajo de Kokoro y presentar su catálogo de productos.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚧 Estado del Proyecto
+
+> 🛠️ En desarrollo activo  
+> 🌐 Demo: _aún no disponible_
+
+---
+
+## ✨ Tecnologías principales
+
+- [**Astro**](https://astro.build/) – Framework moderno para sitios rápidos, estáticos e híbridos.
+- [**Tailwind CSS**](https://tailwindcss.com/) – Utilidades CSS para diseño responsivo, accesible y flexible.
+
+---
+
+## 🚀 Estructura del Proyecto
 
 ```text
 /
@@ -18,7 +30,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── assets
 │   │   └── astro.svg
 │   ├── components
-│   │   └── Welcome.astro
+│   │  
 │   ├── layouts
 │   │   └── Layout.astro
 │   └── pages
@@ -26,21 +38,27 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🚀 Instalación y ejecución local
 
-## 🧞 Commands
+1. **Clona el repositorio**:
 
-All commands are run from the root of the project, from a terminal:
+```bash
+git clone https://github.com/tu-usuario/kokoro-web.git
+cd kokoro-web
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+2. **Instala las dependencias**:
 
-## 👀 Want to learn more?
+```bash
+npm install
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+3. **Ejecuta el entorno de desarrollo**:
+
+```bash
+npm run dev
+```
+
+> Abre `http://localhost:4321` en tu navegador para ver la web localmente.
+
+---
