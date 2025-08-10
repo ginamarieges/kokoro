@@ -1,0 +1,49 @@
+<header class="flex justify-between px-8 py-2 border-b-1 border-[#977b5f] items-center w-full z-10 fixed">
+  <img src="/images/logo-kokoro.svg" width="80" height="80"></img>
+  <nav class="hidden text-[#977b5f] sm:flex flex-row gap-10 text-lg">
+    <a href="/#kokoro">KOKORO</a>
+    <a href="/#us">NOSALTRES</a>
+    <a href="#cub">EL CUB</a>
+    <a href="/#contact">CONTACTE</a>
+  </nav>
+  <button id="burguer-menu-button" aria-label="open-menu" class="sm:hidden" type="button">
+    <img src="/images/burguer.svg" alt="burguer menu" width=40 height=40>
+  </button>
+  <dialog 
+    id="menu-dialog" 
+    role="dialog" 
+    aria-modal="true" 
+    class="flex flex-col p-4 z-50 max-w-full w-full max-h-full h-full translate-x-0 transition-discrete duration-300 sm:hidden starting:-translate-x-full [&:not([open])]:-translate-x-full">
+    <button 
+      id="close-menu-button"
+      type="button"
+      aria-label="close-menu"
+      class="flex place-self-end sm:hidden">
+      <img src="/images/close.svg" alt="close menu" width=40 height=40>
+    </button>
+    <div class="flex flex-col gap-14 w-full text-[#977b5f] items-center justify-center text-3xl flex-1">
+      <a href="/#kokoro">KOKORO</a>
+      <a href="/#us">NOSALTRES</a>
+      <a href="#cub">EL CUB</a>
+      <a href="/#contact">CONTACTE</a>
+    </div>
+  </dialog>
+</header>
+
+<script>
+  const burguerMenuButton = document.getElementById('burguer-menu-button');
+  const closeMenuButton = document.getElementById('close-menu-button');
+  const mobileMenu = document.getElementById('menu-dialog') as HTMLDialogElement;
+  const dialogLinks = mobileMenu.querySelectorAll("a");
+
+  const toggleMenu = () => {
+    mobileMenu.open ? mobileMenu.close() : mobileMenu.showModal();
+  };
+  dialogLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.close();
+  });
+});
+  burguerMenuButton?.addEventListener('click', toggleMenu);
+  closeMenuButton?.addEventListener('click', toggleMenu);
+</script>
