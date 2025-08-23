@@ -1,4 +1,5 @@
 ---
+import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -7,5 +8,32 @@ import Layout from '../layouts/Layout.astro';
     <div class="h-150 flex items-center justify-center overflow-hidden">
       <img src="/images/logo-kokoro.svg" class="w-full max-w-[1000px] h-auto" alt="kokoro's logo"/>
     </div>
+    <SectionContainer id="kokoro" title='KOKORO'>
+      <h2 class="font-bold text-2xl mb-8">Més que joguines, una manera de mirar la infància</h2>
+      <div class="sm:grid grid-cols-6 mx-auto gap-20">
+        <div class="col-span-3">
+          <h3 class="font-bold mb-4">Què vol dir Kokoro?</h3>
+          <div class="flex flex-col gap-8 text-pretty">
+            <p>Kokoro és una paraula japonesa que significa cor, però que també engloba ment, ànima i emoció. És allò que ens mou des de dins, el centre viu des d’on sentim, pensem i actuem.</p>
+            <p>Aquest és l’esperit amb què neix cada joguina: amb intenció, sensibilitat i respecte profund per la infància. A Kokoro fem joguines des del cor, pensades per cuidar els vincles, els processos interns i el joc com a expressió autèntica del món intern de cada infant.</p>
+          </div>
+          <h3 class="font-bold my-4">La nostra mirada pedagògica</h3>
+          <div class="flex flex-col gap-8 text-pretty">
+            <p>La nostra manera de mirar la infància es fonamenta en una combinació de pedagogies actives i l’aportació psicoanalítica que considera l’infant com un ésser ple, amb món intern propi i necessitats emocionals complexes.</p>
+            <p>Ens inspirem en:
+              Maria Montessori, Emmi Pikler, Reggio Emilia i la pedagogía viva, que ens aporten una mirada respectuosa cap al desenvolupament autònom i el joc lliure.
+              El pensament de Marta Mata i Rosa Sensat, referents d’una educació arrelada al territori, pública, amb valors democràtics, i que defensa una escola que escolta i transforma.
+              I també en autores com Esther Bick, Frances Tustin i Melanie Klein, que ens ajuden a entendre els primers vincles, el món emocional profund i la importància de crear entorns segurs i sostinguts des del primer moment de vida.
+            </p>
+            <p>Aquest doble enfocament ens permet dissenyar materials que no només acompanyen el joc, sinó que tenen en compte l’emoció, el vincle i l’estructura psíquica en construcció.</p>
+            <p>"Quan parlem de llibertat dins el joc, parlem de confiança en la capacitat de l'infant de ser autor de la seva pròpia experiència."</p>          
+          </div>
+        </div>
+        <div class="col-span-3 flex flex-col gap-4">
+          <img src="/images/kokoro.png" alt="detail of cub kokoro">
+          <img src="/images/kokoro2.png" alt="detail of cub kokoro">
+        </div>
+      </div>
+    </SectionContainer>
   </main>
 </Layout>
