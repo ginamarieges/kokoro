@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Contact'>
+  <main class="flex flex-col pt-40 mb-10">
+    <div class="sm:flex flex-col px-10 gap-7 max-w-5xl items-center mx-auto">
+      <div class="flex flex-col gap-3 mb-8">
+        <h2 class="text-[#FFD482] text-center text-5xl items-center text-pretty sm:text-6xl">Vols un cub?</h2>
+        <h3 class="text-[#FFD482] text-center text-2xl items-center text-pretty sm:text-3xl">Contacta amb nosaltres!</h3>
+      </div>
+      <div class="sm:grid grid-cols-9 px-10 gap-10 max-w-5xl items-center mx-auto">
+        <div class="bg-[#FFD482] col-span-4 p-8 rounded-xl min-w-fit">
+          <ul>
+            <li>✉️ kokorojoguines@gmail.com</li>
+            <li><a href="https://www.instagram.com/kokoro.joguines/" aria-label="Kokoro instagram profile" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
+            <li>☎️ 675.35.36.32</li>
+          </ul>
+        </div>
+        <span class="col-span-1 mx-auto">o</span>
+        <form name="contact" method="POST" data-netlify="true" autocomplete="off" class="flex flex-col gap-2 col-span-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="text" name="fullname" placeholder="Nom complet" class="border border-[#FFD482] px-4 py-2 rounded-xl focus:border-[#FFD482">
+          <input type="email" name="email" placeholder="Email" class="border border-[#FFD482] px-4 py-2 rounded-xl focus:border-[#FFD482">
+          <textarea name="message" placeholder="Missatge" class="border border-[#FFD482] px-4 py-2 rounded-xl focus:border-[#FFD482" rows="6"></textarea>
+          <button type="submit" class="border border-[#FFD482] text-[#FFD482] px-2 py-1 rounded-xl cursor-pointer hover:bg-[#FFD482] hover:text-white">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</Layout>
