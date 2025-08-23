@@ -1,15 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 ---
 
 <Layout title='Kokoro'>
-  <Header></Header>
-    <main class="flex flex-col pt-10 mb-10">
-      <div class="h-150 flex items-center justify-center overflow-hidden">
-        <img src="/images/logo-kokoro.svg" class="w-full max-w-[1000px] h-auto" />
-      </div>
-    </main>
-    <Footer></Footer>
+  <main class="flex flex-col pt-10 mb-10">
+    <div class="h-150 flex items-center justify-center overflow-hidden">
+      <img src="/images/logo-kokoro.svg" class="w-full max-w-[1000px] h-auto" alt="kokoro's logo"/>
+    </div>
+  </main>
 </Layout>
