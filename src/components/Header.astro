@@ -1,10 +1,10 @@
-<header class="flex justify-between px-8 py-2 items-center w-full z-10 fixed bg-[#FFD482]">
-  <img src="/images/logo-kokoro.svg" width="80" height="80"></img>
-  <nav class="hidden text-[#977b5f] sm:flex flex-row gap-10 text-lg">
-    <a href="/#kokoro">KOKORO</a>
-    <a href="/#us">NOSALTRES</a>
-    <a href="#cub">EL CUB</a>
-    <a href="/#contact">CONTACTE</a>
+<header class="flex justify-between px-8 py-2 items-center w-full z-10 fixed bg-[#FFD482] min-h-24">
+  <img src="/images/logo-kokoro.svg" width="80" height="80" class="sm:hidden"></img>
+  <nav class="hidden text-white sm:flex flex-row gap-10 text-lg ">
+    <a href="/#kokoro" class="hover:text-[#977b5f]">KOKORO</a>
+    <a href="/#us" class="hover:text-[#977b5f]">NOSALTRES</a>
+    <a href="#cub" class="hover:text-[#977b5f]">EL CUB</a>
+    <a href="/contact" class="hover:text-[#977b5f]">CONTACTE</a>
   </nav>
   <button id="burguer-menu-button" aria-label="open-menu" class="sm:hidden" type="button">
     <img src="/images/burguer.svg" alt="burguer menu" width=40 height=40>
@@ -13,19 +13,19 @@
     id="menu-dialog" 
     role="dialog" 
     aria-modal="true" 
-    class="flex flex-col p-4 z-50 max-w-full w-full max-h-full h-full translate-x-0 transition-discrete duration-300 sm:hidden starting:-translate-x-full [&:not([open])]:-translate-x-full">
+    class="flex flex-col bg-[#FFD482] px-8 py-2 z-50 max-w-full w-full max-h-full h-full translate-x-0 transition-discrete duration-300 sm:hidden starting:-translate-x-full [&:not([open])]:-translate-x-full">
     <button 
       id="close-menu-button"
       type="button"
       aria-label="close-menu"
-      class="flex place-self-end sm:hidden">
+      class="flex place-self-end py-4 sm:hidden">
       <img src="/images/close.svg" alt="close menu" width=40 height=40>
     </button>
     <div class="flex flex-col gap-14 w-full text-[#977b5f] items-center justify-center text-3xl flex-1">
       <a href="/#kokoro">KOKORO</a>
       <a href="/#us">NOSALTRES</a>
       <a href="#cub">EL CUB</a>
-      <a href="/#contact">CONTACTE</a>
+      <a href="/contact">CONTACTE</a>
     </div>
   </dialog>
 </header>
