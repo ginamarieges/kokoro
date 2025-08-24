@@ -1,4 +1,5 @@
 ---
+import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -7,5 +8,58 @@ import Layout from '../layouts/Layout.astro';
     <div class="h-150 flex items-center justify-center overflow-hidden">
       <img src="/images/logo-kokoro.svg" class="w-full max-w-[1000px] h-auto" alt="kokoro's logo"/>
     </div>
+    <SectionContainer id="kokoro" title='KOKORO'>
+      <h2 class="font-bold text-2xl mb-8">Més que joguines, una manera de mirar la infància</h2>
+      <div class="sm:grid grid-cols-6 mx-auto gap-20">
+        <div class="col-span-3">
+          <h3 class="font-bold mb-4">Què vol dir Kokoro?</h3>
+          <div class="flex flex-col gap-8 text-pretty">
+            <p>Kokoro és una paraula japonesa que significa cor, però que també engloba ment, ànima i emoció. És allò que ens mou des de dins, el centre viu des d’on sentim, pensem i actuem.</p>
+            <p>Aquest és l’esperit amb què neix cada joguina: amb intenció, sensibilitat i respecte profund per la infància. A Kokoro fem joguines des del cor, pensades per cuidar els vincles, els processos interns i el joc com a expressió autèntica del món intern de cada infant.</p>
+          </div>
+          <h3 class="font-bold my-4">La nostra mirada pedagògica</h3>
+          <div class="flex flex-col gap-8 text-pretty">
+            <p>La nostra manera de mirar la infància es fonamenta en una combinació de pedagogies actives i l’aportació psicoanalítica que considera l’infant com un ésser ple, amb món intern propi i necessitats emocionals complexes.</p>
+            <p>Ens inspirem en:
+              Maria Montessori, Emmi Pikler, Reggio Emilia i la pedagogía viva, que ens aporten una mirada respectuosa cap al desenvolupament autònom i el joc lliure.
+              El pensament de Marta Mata i Rosa Sensat, referents d’una educació arrelada al territori, pública, amb valors democràtics, i que defensa una escola que escolta i transforma.
+              I també en autores com Esther Bick, Frances Tustin i Melanie Klein, que ens ajuden a entendre els primers vincles, el món emocional profund i la importància de crear entorns segurs i sostinguts des del primer moment de vida.
+            </p>
+            <p>Aquest doble enfocament ens permet dissenyar materials que no només acompanyen el joc, sinó que tenen en compte l’emoció, el vincle i l’estructura psíquica en construcció.</p>
+            <p>"Quan parlem de llibertat dins el joc, parlem de confiança en la capacitat de l'infant de ser autor de la seva pròpia experiència."</p>          
+          </div>
+          <h3 class="font-bold my-4">Per què triar Kokoro?</h3>
+          <div class="flex flex-col gap-8 text-pretty">
+            <p>Perquè fem joguines amb sentit. Cada proposta neix de l’observació real i d’un desig profund de respectar la infància des de tots els seus llenguatges: corporal, emocional, simbòlic i relacional.</p>
+            <p>Perquè coneixem l’aula. Som mestres en actiu i el nostre dia a dia està ple d'infants reals, amb necessitats diverses i mirades úniques. Sabem què pot ajudar a créixer des de dins.</p>
+            <p>Perquè acompanyem la diversitat. El nostre treball en educació especial, i especialment amb infants amb TEA, ens ha ensenyat a llegir el joc com una via de comunicació i regulació fonamental.</p>
+            <p>Perquè dissenyem des del cor. Amb materials naturals, càlids i sostenibles. Amb cura per l’estètica, l’ordre i la senzillesa. Amb una mirada oberta i viva cap a cada infant.</p>
+          </div>
+        </div>
+        <div class="col-span-3 flex flex-col gap-4">
+          <img src="/images/kokoro.png" alt="detail of cub kokoro">
+          <img src="/images/kokoro2.png" alt="detail of cub kokoro">
+        </div>
+      </div>
+    </SectionContainer>
+    <SectionContainer id="us" title="SOBRE NOSALTRES">
+      <h2 class="font-bold text-2xl mb-8">Kokoro: Joguines sensibles, joguines amb sentit</h2>
+      <div class="sm:grid grid-cols-6 mx-auto gap-20">
+        <div class="col-span-3 flex flex-col gap-4">
+          <img src="/images/nosaltres.png" alt="kokoro's team between their product">
+        </div>
+        <div class="col-span-3">
+          <h3 class="font-bold mb-4">Qui som?</h3>
+          <div class="flex flex-col gap-8 text-pretty">
+            <p>Som l'Alba i la Sandra, mestres, pedagogues i amigues. Ens vam conèixer a l’escola on treballem, i des del primer moment vam descobrir que compartim la mirada  cap a la infància i l’educació, així com uns valors profunds: el respecte, l’amor pel procés, la creativitat i l’autenticitat. Som inquietes, curioses, apassionades pel que fem, i creiem que l’educació és una eina poderosa per transformar el món.</p>
+            <p>Fa més de deu anys que acompanyem infants en el seu camí de creixement, tant en l’àmbit ordinari com en l’àmbit de l’educació especial, atenent infants amb TEA (Trastorn de l’Espectre Autista). Som mestres en actiu, i és des d’aquesta experiència viscuda, diària i compromesa neix Kokoro: com una resposta, com una necessitat, com un somni compartit.</p>
+            <p>Kokoro és molt més que una marca de joguines. És una expressió del que vivim i creiem com a educadores. És una aposta per una infància escoltada, per materials que acompanyen amb sensibilitat i per un joc que fa créixer, connecta i transforma.</p>
+            <p>Cada joguina que dissenyem està impregnada de tot allò que hem après en aquests anys d'acompanyament: el valor de la paciència, la importància del ritme propi, la força del vincle i el poder del joc com a eina d’expressió i des de Kokoro, cada detall compta. Utilitzem materials naturals, sostenibles i cuidats, i dissenyem amb intenció i respecte, fugint de l’excés i connectant amb l’essencial. Volem contribuir a una cultura del joc més conscient, més lenta, més honesta amb els infants i amb el món que habiten.</p>
+            <p>Gràcies per ser aquí, per confiar i per creure —com nosaltres— que una altra manera de mirar i acompanyar la infància és possible.</p>
+            <p>Amb amor, Alba i Sandra</p>
+          </div>
+        </div>
+      </div>
+    </SectionContainer>
   </main>
 </Layout>
