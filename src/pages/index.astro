@@ -4,13 +4,16 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Kokoro'>
-  <main class="flex flex-col pt-10 mb-10">
-    <div class="h-150 flex items-center justify-center overflow-hidden">
-      <img src="/images/logo-kokoro.svg" class="w-full max-w-[1000px] h-auto" alt="kokoro's logo"/>
+  <main class="flex flex-col pt-10 mb-10 w-full">
+    <div class="hidden sm:block h-150 flex items-center justify-center overflow-hidden">
+      <img src="/images/logo.png" class="w-full max-w-[1000px] h-auto mx-auto" alt="kokoro's logo"/>
+    </div>
+    <div class="sm:hidden">
+      <img src="/images/hero.png" alt="kokoro's cub image" class="">
     </div>
     <SectionContainer id="kokoro" title='KOKORO'>
       <h2 class="font-bold text-2xl mb-8">Més que joguines, una manera de mirar la infància</h2>
-      <div class="sm:grid grid-cols-6 mx-auto gap-20">
+      <div class="flex flex-col gap-6 sm:grid grid-cols-6 mx-auto sm:gap-20">
         <div class="col-span-3">
           <h3 class="font-bold mb-4">Què vol dir Kokoro?</h3>
           <div class="flex flex-col gap-8 text-pretty">
@@ -44,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
     </SectionContainer>
     <SectionContainer id="us" title="SOBRE NOSALTRES">
       <h2 class="font-bold text-2xl mb-8">Kokoro: Joguines sensibles, joguines amb sentit</h2>
-      <div class="sm:grid grid-cols-6 mx-auto gap-20">
+      <div class="flex flex-col-reverse gap-6 sm:grid grid-cols-6 mx-auto sm:gap-20">
         <div class="col-span-3 flex flex-col gap-4">
           <img src="/images/nosaltres.png" alt="kokoro's team between their product">
         </div>
