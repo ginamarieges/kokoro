@@ -1,31 +1,48 @@
 ---
+import ContactForm from '../components/ContactForm.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title='Contact'>
-  <main class="flex flex-col pt-40 mb-10">
-    <div class="sm:flex flex-col px-10 gap-7 max-w-5xl items-center mx-auto">
-      <div class="flex flex-col gap-3 mb-8">
-        <h2 class="text-[#FFD482] text-center text-5xl items-center text-pretty sm:text-6xl">Vols un cub?</h2>
-        <h3 class="text-[#FFD482] text-center text-2xl items-center text-pretty sm:text-3xl">Contacta amb nosaltres!</h3>
-      </div>
-      <div class="sm:grid grid-cols-9 px-10 gap-10 max-w-5xl items-center mx-auto">
-        <div class="bg-[#FFD482] col-span-4 p-8 rounded-xl min-w-fit">
-          <ul>
-            <li>✉️ kokorojoguines@gmail.com</li>
-            <li><a href="https://www.instagram.com/kokoro.joguines/" aria-label="Kokoro instagram profile" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
-            <li>☎️ 675.35.36.32</li>
-          </ul>
+<Layout title="Contact">
+  <main class="pt-35 pb-12 sm:pt-36">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section class="max-w-5xl mx-auto">
+        <div class="mb-10 text-center space-y-3 px-2">
+          <h2 class="text-[#FFD482] text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+            Vols un cub?
+          </h2>
+          <h3 class="text-[#FFD482] text-xl sm:text-2xl lg:text-3xl">
+            Contacta amb nosaltres!
+          </h3>
         </div>
-        <span class="col-span-1 mx-auto">o</span>
-        <form name="contact" method="POST" data-netlify="true" autocomplete="off" class="flex flex-col gap-2 col-span-4">
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="text" name="fullname" placeholder="Nom complet" class="border border-[#FFD482] px-4 py-2 rounded-xl focus:border-[#FFD482">
-          <input type="email" name="email" placeholder="Email" class="border border-[#FFD482] px-4 py-2 rounded-xl focus:border-[#FFD482">
-          <textarea name="message" placeholder="Missatge" class="border border-[#FFD482] px-4 py-2 rounded-xl focus:border-[#FFD482" rows="6"></textarea>
-          <button type="submit" class="border border-[#FFD482] text-[#FFD482] px-2 py-1 rounded-xl cursor-pointer hover:bg-[#FFD482] hover:text-white">Enviar</button>
-        </form>
-      </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-9 gap-6 md:gap-8 items-start md:items-stretch">
+          <div class="flex flex-col sm:justify-center md:col-span-4 w-full min-w-0">
+            <ul class="space-y-3 break-words">
+              <li class="bg-[#FFD482] rounded-xl px-4 py-2">✉️ <a href="mailto:kokorojoguines@gmail.com">kokorojoguines@gmail.com</a></li>
+              <li class="bg-[#FFD482] rounded-xl px-4 py-2">
+                <a
+                  href="https://www.instagram.com/kokoro.joguines/"
+                  aria-label="Kokoro instagram profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  /kokorojoguines 
+                </a>
+              </li>
+              <li class="bg-[#FFD482] rounded-xl px-4 py-2">☎️ <a href="tel:+34675353632">675 35 36 32</a></li>
+            </ul>
+          </div>
+
+          <div class="flex items-center justify-center md:col-span-1 my-4 md:my-0">
+            <span class="text-[#FFD482] select-none">o</span>
+          </div>
+
+          <div class="md:col-span-4 w-full min-w-0">
+            <ContactForm/>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 </Layout>
