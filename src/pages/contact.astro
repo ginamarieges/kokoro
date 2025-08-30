@@ -4,45 +4,42 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Contact">
-  <main class="pt-35 pb-12 sm:pt-36">
+  <div class="pt-16 pb-12 sm:pt-16">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <section class="max-w-5xl mx-auto">
-        <div class="mb-10 text-center space-y-3 px-2">
-          <h2 class="text-[#FFD482] text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
-            Vols un cub?
-          </h2>
-          <h3 class="text-[#FFD482] text-xl sm:text-2xl lg:text-3xl">
-            Contacta amb nosaltres!
-          </h3>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-9 gap-6 md:gap-8 items-start md:items-stretch">
-          <div class="flex flex-col sm:justify-center md:col-span-4 w-full min-w-0">
-            <ul class="space-y-3 break-words">
-              <li class="bg-[#FFD482] rounded-xl px-4 py-2">✉️ <a href="mailto:kokorojoguines@gmail.com">kokorojoguines@gmail.com</a></li>
-              <li class="bg-[#FFD482] rounded-xl px-4 py-2">
-                <a
-                  href="https://www.instagram.com/kokoro.joguines/"
-                  aria-label="Kokoro instagram profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  /kokorojoguines 
-                </a>
-              </li>
-              <li class="bg-[#FFD482] rounded-xl px-4 py-2">☎️ <a href="tel:+34675353632">675 35 36 32</a></li>
-            </ul>
+      <section class="min-h-screen pt-24 pb-12 lg:grid grid-cols-5 gap-4 items-stretch">
+  <div class="bg-[url('/images/contacte-kokoro.png')] bg-cover bg-center col-span-2 h-full min-h-[20rem] rounded-2xl"></div>
+        <div class="col-span-3">
+          <div class="mb-10 text-center space-y-3 px-2">
+            <h2 class="text-[#FFD483] text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+              Vols un cub?
+            </h2>
+            <h3 class="text-[#FFD483] text-xl lg:text-2xl">
+              Si tens dubtes, curiositats o t’agradaria aconseguir el Cub Kokoro, escriu-nos. Ens encanta conversar i acompanyar de manera propera
+            </h3>
           </div>
-
-          <div class="flex items-center justify-center md:col-span-1 my-4 md:my-0">
-            <span class="text-[#FFD482] select-none">o</span>
-          </div>
-
-          <div class="md:col-span-4 w-full min-w-0">
-            <ContactForm/>
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col sm:justify-center w-full min-w-0 bg-[#FFD483] rounded-xl px-4 py-2 max-w-lg mx-auto">
+              <ul class="space-y-3 break-words">
+                <li>✉️ <a href="mailto:kokorojoguines@gmail.com">kokorojoguines@gmail.com</a></li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/kokoro.joguines/"
+                    aria-label="Kokoro instagram profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    /kokorojoguines
+                  </a>
+                </li>
+                <li>☎️ <a href="tel:+34675353632">675 35 36 32</a></li>
+              </ul>
+            </div>
+            <div class="md:max-w-lg min-w-0 mx-auto">
+              <ContactForm/>
+            </div>
           </div>
         </div>
       </section>
     </div>
-  </main>
+  </div>
 </Layout>
