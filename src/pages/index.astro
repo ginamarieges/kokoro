@@ -13,7 +13,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
     <SectionContainer id="kokoro" title='KOKORO'>
       <h2 class="font-bold text-2xl mb-8">Més que joguines, una manera de mirar la infància</h2>
-      <div class="flex flex-col gap-6 sm:grid grid-cols-6 mx-auto sm:gap-20">
+      <div class="flex flex-col gap-6 sm:grid md:grid-cols-6 mx-auto sm:gap-20">
         <div class="col-span-3">
           <h3 class="font-bold mb-4">Què vol dir Kokoro?</h3>
           <div class="flex flex-col gap-8 text-pretty text-justify">
@@ -47,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
     </SectionContainer>
     <SectionContainer id="us" title="SOBRE NOSALTRES">
       <h2 class="font-bold text-2xl mb-8">Kokoro: Joguines sensibles, joguines amb sentit</h2>
-      <div class="flex flex-col-reverse gap-6 sm:grid grid-cols-6 mx-auto sm:gap-20">
+      <div class="flex flex-col-reverse gap-6 sm:grid md:grid-cols-6 mx-auto sm:gap-20">
         <div class="col-span-3 flex flex-col gap-4">
           <img src="/images/nosaltres.png" alt="kokoro's team between their product">
         </div>
@@ -61,6 +61,65 @@ import Layout from '../layouts/Layout.astro';
             <p>Gràcies per ser aquí, per confiar i per creure —com nosaltres— que una altra manera de mirar i acompanyar la infància és possible.</p>
             <p>Amb amor, Alba i Sandra</p>
           </div>
+        </div>
+      </div>
+    </SectionContainer>
+    <SectionContainer id="cub" title="EL CUB">
+      <h2 class="font-bold text-2xl mb-8">El Cub de Kokoro</h2>
+      <div class="grid gap-6 sm:gap-20 md:grid-cols-6 mx-auto">
+        <div class="col-span-3">
+          <h3 class="font-bold mb-4">Què és el CUB?</h3>
+          <div class="text-pretty text-justify">
+            <p>El Cub és la nostra primera joguina.</p>
+            <p>És una joguina sensorial de fusta natural, dissenyada amb cura per oferir joc lliure i significatiu a totes les infàncies. Amb sis cares
+                plenes de textures, formes i obertures, convida a explorar, descobrir i connectar amb el joc d’una manera calmada i segura. Ideal per a infants de 0
+                a 6 anys i especialment enriquidor per a criatures amb necessitats diverses.</p>
+          </div>
+          <h3 class="font-bold my-4">Les cares del cub</h3>
+          <div class="flex flex-col gap-4 text-pretty text-justify">
+            <h4 class="text-[#FFD483] font-bold">Forats grans per amagar i descobrir objectes</h4>
+            <p>Aquests forats amplis conviden els infants a introduir i treure objectes de diferents mides. És una activitat que estimula el joc simbòlic, la noció de permanència de l’objecte i la sorpresa de la descoberta. També ajuda a treballar la coordinació ull–mà i la planificació dels moviments.</p>
+            <h4 class="text-[#FFD483] font-bold">Petits forats que desperten la curiositat</h4>
+            <p>Els forats més petits són una invitació a observar i experimentar. Els infants intentaran mirar-hi a través, introduir-hi els dits o petits objectes, cosa que desperta la seva curiositat natural. A més, aquests espais fomenten la paciència i l’atenció sostinguda.</p>
+            <h4 class="text-[#FFD483] font-bold">Barrots per observar des de diferents punts de vista</h4>
+            <p>Els barrots permeten als nens mirar l’interior del Cub com si fos una finestra. Aquesta obertura ofereix la possibilitat d’observar el que hi ha dins des de diferents angles i perspectives, estimulant la percepció visual i la creativitat. També conviden al joc de “veure i ser vist”, molt valorat en les primeres etapes del desenvolupament.</p>
+            <h4 class="text-[#FFD483] font-bold">Textures ondulades per explorar amb el tacte</h4>
+            <p>Les superfícies amb relleu i formes ondulades estan pensades perquè els infants les recorrin amb les mans. Aquesta experiència tàctil desenvolupa la sensibilitat, l’exploració sensorial i la capacitat de distingir diferents textures, afavorint la connexió entre el cos i l’entorn.</p>
+            <h4 class="text-[#FFD483] font-bold">Porteta per accedir als objectes amagats</h4>
+            <p>Una petita porta que s’obre i es tanca desperta la intriga i convida al joc de causa–efecte. Els infants poden amagar-hi objectes i recuperar-los després, cosa que estimula la memòria i el pensament lògic. A més, obrir i tancar la porteta treballa la motricitat fina i la força dels dits.</p>
+            <h4 class="text-[#FFD483] font-bold">Línies sensorials per seguir amb els dits</h4>
+            <p>Les línies gravades a la superfície del Cub guien els infants a recórrer-les amb els dits. Aquesta acció estimula la motricitat fina, la coordinació i el control dels moviments, a més d’afavorir la concentració i la relaxació. És una activitat senzilla però molt rica en beneficis.</p>
+          </div>
+          <div class="flex flex-col mt-4 gap-4 md:mt-10 xl:flex-row">
+            <div class="flex-1">
+              <a href="/documents/guia-tecnica.pdf" download class="block">
+                <button aria-label="download-instructions" class="w-full flex items-center gap-2 border cursor-pointer text-[#FFD483] px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FFD483] hover:text-white">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m-1 8V6h2v4h3l-4 4l-4-4zm6 7H7v-2h10z"/>
+                  </svg>
+                  Descarregar fitxa tècnica
+                </button>
+              </a>
+            </div>
+            <div class="flex-1">
+              <a href="/documents/guia-pedagogica.pdf" download class="block">
+                <button aria-label="download-guide" class="w-full flex items-center gap-2 border cursor-pointer text-[#FFD483] px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FFD483] hover:text-white">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m-1 8V6h2v4h3l-4 4l-4-4zm6 7H7v-2h10z"/>
+                  </svg>
+                  Descarregar guia pedagògica
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" grid grid-cols-1 gap-4 max-w-xl mx-auto col-span-3 lg:grid-cols-1 xl:grid-cols-2">
+          <img src="/images/lateral-porta.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+          <img src="/images/lateral-forats-barres.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+          <img src="/images/lateral-mix.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+          <img src="/images/lateral-barres.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+          <img src="/images/lateral-forats.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+          <img src="/images/kokoro2.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
         </div>
       </div>
     </SectionContainer>
