@@ -90,6 +90,28 @@ import Layout from '../layouts/Layout.astro';
             <h4 class="text-[#FFD483] font-bold">Línies sensorials per seguir amb els dits</h4>
             <p>Les línies gravades a la superfície del Cub guien els infants a recórrer-les amb els dits. Aquesta acció estimula la motricitat fina, la coordinació i el control dels moviments, a més d’afavorir la concentració i la relaxació. És una activitat senzilla però molt rica en beneficis.</p>
           </div>
+          <div class="flex flex-col mt-4 gap-4 md:mt-10 xl:flex-row">
+            <div class="flex-1">
+              <a href="/documents/guia-tecnica.pdf" download class="block">
+                <button aria-label="download-instructions" class="w-full flex items-center gap-2 border cursor-pointer text-[#FFD483] px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FFD483] hover:text-white">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m-1 8V6h2v4h3l-4 4l-4-4zm6 7H7v-2h10z"/>
+                  </svg>
+                  Descarregar fitxa tècnica
+                </button>
+              </a>
+            </div>
+            <div class="flex-1">
+              <a href="/documents/guia-pedagogica.pdf" download class="block">
+                <button aria-label="download-guide" class="w-full flex items-center gap-2 border cursor-pointer text-[#FFD483] px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FFD483] hover:text-white">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m-1 8V6h2v4h3l-4 4l-4-4zm6 7H7v-2h10z"/>
+                  </svg>
+                  Descarregar guia pedagògica
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
         <div class=" grid grid-cols-1 gap-4 max-w-xl mx-auto col-span-3 lg:grid-cols-1 xl:grid-cols-2">
           <img src="/images/lateral-porta.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
