@@ -1,127 +1,125 @@
 ---
 import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro'
 ---
 
 <Layout title='Kokoro'>
-  <div class="flex flex-col pt-10 mb-10 w-full">
-    <div class="hidden sm:block h-150 flex items-center justify-center overflow-hidden">
-      <img src="/images/logo.png" class="w-full max-w-[1000px] h-auto mx-auto" alt="kokoro's logo"/>
+  <Hero/>
+  <SectionContainer id="kokoro" title='KOKORO'>
+    <h2 class="font-bold text-2xl mb-8">Més que joguines, una manera de mirar la infància</h2>
+    <div class="grid gap-6 sm:gap-20 lg:grid-cols-6 mx-auto">
+      <div class="col-span-3">
+        <h3 class="font-bold mb-4">Què vol dir Kokoro?</h3>
+        <div class="flex flex-col gap-8 text-pretty text-justify">
+          <p>Kokoro és una paraula japonesa que significa cor, però que també engloba ment, ànima i emoció. És allò que ens mou des de dins, el centre viu des d’on sentim, pensem i actuem.</p>
+          <p>Aquest és l’esperit amb què neix cada joguina: amb intenció, sensibilitat i respecte profund per la infància. A Kokoro fem joguines des del cor, pensades per cuidar els vincles, els processos interns i el joc com a expressió autèntica del món intern de cada infant.</p>
+        </div>
+        <h3 class="font-bold my-4">La nostra mirada pedagògica</h3>
+        <div class="flex flex-col gap-8 text-pretty text-justify">
+          <p>La nostra manera de mirar la infància es fonamenta en una combinació de pedagogies actives i l’aportació psicoanalítica que considera l’infant com un ésser ple, amb món intern propi i necessitats emocionals complexes.</p>
+          <p>Ens inspirem en:
+            Maria Montessori, Emmi Pikler, Reggio Emilia i la pedagogía viva, que ens aporten una mirada respectuosa cap al desenvolupament autònom i el joc lliure.
+            El pensament de Marta Mata i Rosa Sensat, referents d’una educació arrelada al territori, pública, amb valors democràtics, i que defensa una escola que escolta i transforma.
+            I també en autores com Esther Bick, Frances Tustin i Melanie Klein, que ens ajuden a entendre els primers vincles, el món emocional profund i la importància de crear entorns segurs i sostinguts des del primer moment de vida.
+          </p>
+          <p>Aquest doble enfocament ens permet dissenyar materials que no només acompanyen el joc, sinó que tenen en compte l’emoció, el vincle i l’estructura psíquica en construcció.</p>
+          <p>"Quan parlem de llibertat dins el joc, parlem de confiança en la capacitat de l'infant de ser autor de la seva pròpia experiència."</p>          
+        </div>
+        <h3 class="font-bold my-4">Per què triar Kokoro?</h3>
+        <div class="flex flex-col gap-8 text-pretty text-justify">
+          <p>Perquè fem joguines amb sentit. Cada proposta neix de l’observació real i d’un desig profund de respectar la infància des de tots els seus llenguatges: corporal, emocional, simbòlic i relacional.</p>
+          <p>Perquè coneixem l’aula. Som mestres en actiu i el nostre dia a dia està ple d'infants reals, amb necessitats diverses i mirades úniques. Sabem què pot ajudar a créixer des de dins.</p>
+          <p>Perquè acompanyem la diversitat. El nostre treball en educació especial, i especialment amb infants amb TEA, ens ha ensenyat a llegir el joc com una via de comunicació i regulació fonamental.</p>
+          <p>Perquè dissenyem des del cor. Amb materials naturals, càlids i sostenibles. Amb cura per l’estètica, l’ordre i la senzillesa. Amb una mirada oberta i viva cap a cada infant.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 mx-auto col-span-3 md:grid-cols-3 lg:grid-cols-2">
+        <img src="/images/kokoro-1.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/kokoro-2.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/kokoro-3.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/kokoro-4.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/kokoro-5.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/kokoro-6.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+      </div>
     </div>
-    <div class="sm:hidden">
-      <img src="/images/hero.png" alt="kokoro's cub image" class="">
+  </SectionContainer>
+  <SectionContainer id="cub" title="EL CUB">
+    <h2 class="font-bold text-2xl mb-8">El Cub de Kokoro</h2>
+    <div class="grid gap-6 sm:gap-20 lg:grid-cols-6 mx-auto">
+      <div class="col-span-3">
+        <h3 class="font-bold mb-4">Què és el CUB?</h3>
+        <div class="text-pretty text-justify">
+          <p>El Cub és la nostra primera joguina.</p>
+          <p>És una joguina sensorial de fusta natural, dissenyada amb cura per oferir joc lliure i significatiu a totes les infàncies. Amb sis cares
+              plenes de textures, formes i obertures, convida a explorar, descobrir i connectar amb el joc d’una manera calmada i segura. Ideal per a infants de 0
+              a 6 anys i especialment enriquidor per a criatures amb necessitats diverses.</p>
+        </div>
+        <h3 class="font-bold my-4">Les cares del cub</h3>
+        <div class="flex flex-col gap-4 text-pretty text-justify">
+          <h4 class="text-[#FFD483] font-bold">Forats grans per amagar i descobrir</h4>
+          <p>Aquests forats conviden a introduir i treure objectes de diferents mides. Afavoreixen la permanència de l’objecte, la sorpresa de la descoberta i el joc simbòlic, a més de treballar la coordinació ull–mà.</p>
+          <h4 class="text-[#FFD483] font-bold">Petits forats que desperten la curiositat</h4>
+          <p>Els infants hi volen mirar, passar-hi els dits o objectes petits. Aquests forats desperten la curiositat natural, fomenten la paciencia i l’atenció sostinguda.</p>
+          <h4 class="text-[#FFD483] font-bold">Barrots per observar des de diferents punts de vista</h4>
+          <p>Els barrots permeten mirar dins del cub com si fos una finestra. Oferixen diferents perspectives i estimulen la percepció visual, la creativitat i el joc de veure i ser vist.</p>
+          <h4 class="text-[#FFD483] font-bold">Textures ondulades per explorar amb el tacte</h4>
+          <p>Les superfícies amb relleu conviden a resseguir-les amb les mans. Ajuden a desenvolupar la sensibilitat tàctil, l’exploració sensorial i la connexió cos–entorn.</p>
+          <h4 class="text-[#FFD483] font-bold">Porteta per accedir als objectes amagats</h4>
+          <p>Obrir i tancar la porteta desperta la intriga i permet amagar i recuperar objectes. Estimula la memòria, el pensament lògic i la motricitat fina.</p>
+          <h4 class="text-[#FFD483] font-bold">Línies sensorials per seguir amb els dits</h4>
+          <p>Les línies gravades guien el moviment dels dits, afavorint la coordinació, la motricitat fina i la concentració. Una activitat senzilla i relaxant amb molts beneficis.</p>
+        </div>
+        <div class="flex flex-col mt-4 gap-4 md:mt-10 md:flex-row lg:flex-col xl:flex-row">
+          <div class="flex-1">
+            <a href="/documents/guia-tecnica.pdf" download class="block">
+              <button aria-label="download-instructions" class="w-full flex items-center gap-2 border cursor-pointer text-[#FFD483] px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FFD483] hover:text-white">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m-1 8V6h2v4h3l-4 4l-4-4zm6 7H7v-2h10z"/>
+                </svg>
+                Descarregar fitxa tècnica
+              </button>
+            </a>
+          </div>
+          <div class="flex-1">
+            <a href="/documents/guia-pedagogica.pdf" download class="block">
+              <button aria-label="download-guide" class="w-full flex items-center gap-2 border cursor-pointer text-[#FFD483] px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FFD483] hover:text-white">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m-1 8V6h2v4h3l-4 4l-4-4zm6 7H7v-2h10z"/>
+                </svg>
+                Descarregar guia pedagògica
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 mx-auto col-span-3 md:grid-cols-3 lg:grid-cols-2">
+        <img src="/images/cub-porta.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/cub-forats.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/cub-forats-2.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/cub-barres.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/cub-nen.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+        <img src="/images/cub-detall.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
+      </div>
     </div>
-    <SectionContainer id="kokoro" title='KOKORO'>
-      <h2 class="font-bold text-2xl mb-8">Més que joguines, una manera de mirar la infància</h2>
-      <div class="flex flex-col gap-6 sm:grid md:grid-cols-6 mx-auto sm:gap-20">
-        <div class="col-span-3">
-          <h3 class="font-bold mb-4">Què vol dir Kokoro?</h3>
-          <div class="flex flex-col gap-8 text-pretty text-justify">
-            <p>Kokoro és una paraula japonesa que significa cor, però que també engloba ment, ànima i emoció. És allò que ens mou des de dins, el centre viu des d’on sentim, pensem i actuem.</p>
-            <p>Aquest és l’esperit amb què neix cada joguina: amb intenció, sensibilitat i respecte profund per la infància. A Kokoro fem joguines des del cor, pensades per cuidar els vincles, els processos interns i el joc com a expressió autèntica del món intern de cada infant.</p>
-          </div>
-          <h3 class="font-bold my-4">La nostra mirada pedagògica</h3>
-          <div class="flex flex-col gap-8 text-pretty text-justify">
-            <p>La nostra manera de mirar la infància es fonamenta en una combinació de pedagogies actives i l’aportació psicoanalítica que considera l’infant com un ésser ple, amb món intern propi i necessitats emocionals complexes.</p>
-            <p>Ens inspirem en:
-              Maria Montessori, Emmi Pikler, Reggio Emilia i la pedagogía viva, que ens aporten una mirada respectuosa cap al desenvolupament autònom i el joc lliure.
-              El pensament de Marta Mata i Rosa Sensat, referents d’una educació arrelada al territori, pública, amb valors democràtics, i que defensa una escola que escolta i transforma.
-              I també en autores com Esther Bick, Frances Tustin i Melanie Klein, que ens ajuden a entendre els primers vincles, el món emocional profund i la importància de crear entorns segurs i sostinguts des del primer moment de vida.
-            </p>
-            <p>Aquest doble enfocament ens permet dissenyar materials que no només acompanyen el joc, sinó que tenen en compte l’emoció, el vincle i l’estructura psíquica en construcció.</p>
-            <p>"Quan parlem de llibertat dins el joc, parlem de confiança en la capacitat de l'infant de ser autor de la seva pròpia experiència."</p>          
-          </div>
-          <h3 class="font-bold my-4">Per què triar Kokoro?</h3>
-          <div class="flex flex-col gap-8 text-pretty text-justify">
-            <p>Perquè fem joguines amb sentit. Cada proposta neix de l’observació real i d’un desig profund de respectar la infància des de tots els seus llenguatges: corporal, emocional, simbòlic i relacional.</p>
-            <p>Perquè coneixem l’aula. Som mestres en actiu i el nostre dia a dia està ple d'infants reals, amb necessitats diverses i mirades úniques. Sabem què pot ajudar a créixer des de dins.</p>
-            <p>Perquè acompanyem la diversitat. El nostre treball en educació especial, i especialment amb infants amb TEA, ens ha ensenyat a llegir el joc com una via de comunicació i regulació fonamental.</p>
-            <p>Perquè dissenyem des del cor. Amb materials naturals, càlids i sostenibles. Amb cura per l’estètica, l’ordre i la senzillesa. Amb una mirada oberta i viva cap a cada infant.</p>
-          </div>
-        </div>
-        <div class="col-span-3 flex flex-col gap-4">
-          <img src="/images/kokoro.png" alt="detail of cub kokoro">
-          <img src="/images/kokoro2.png" alt="detail of cub kokoro">
+  </SectionContainer>
+  <SectionContainer id="us" title="SOBRE NOSALTRES">
+    <h2 class="font-bold text-2xl mb-8">Kokoro: Joguines sensibles, joguines amb sentit</h2>
+    <div class="flex flex-col-reverse gap-6 sm:grid lg:grid-cols-6 lg:flex-col mx-auto sm:gap-20">
+      <div class="col-span-3 flex flex-col gap-4">
+        <img src="/images/nosaltres.png" alt="kokoro's team between their product">
+      </div>
+      <div class="col-span-3">
+        <h3 class="font-bold mb-4">Qui som?</h3>
+        <div class="flex flex-col gap-8 text-pretty text-justify">
+          <p>Som l'Alba i la Sandra, mestres, pedagogues i amigues. Ens vam conèixer a l’escola on treballem, i des del primer moment vam descobrir que compartim la mirada  cap a la infància i l’educació, així com uns valors profunds: el respecte, l’amor pel procés, la creativitat i l’autenticitat. Som inquietes, curioses, apassionades pel que fem, i creiem que l’educació és una eina poderosa per transformar el món.</p>
+          <p>Fa més de deu anys que acompanyem infants en el seu camí de creixement, tant en l’àmbit ordinari com en l’àmbit de l’educació especial, atenent infants amb TEA (Trastorn de l’Espectre Autista). Som mestres en actiu, i és des d’aquesta experiència viscuda, diària i compromesa neix Kokoro: com una resposta, com una necessitat, com un somni compartit.</p>
+          <p>Kokoro és molt més que una marca de joguines. És una expressió del que vivim i creiem com a educadores. És una aposta per una infància escoltada, per materials que acompanyen amb sensibilitat i per un joc que fa créixer, connecta i transforma.</p>
+          <p>Cada joguina que dissenyem està impregnada de tot allò que hem après en aquests anys d'acompanyament: el valor de la paciència, la importància del ritme propi, la força del vincle i el poder del joc com a eina d’expressió i des de Kokoro, cada detall compta. Utilitzem materials naturals, sostenibles i cuidats, i dissenyem amb intenció i respecte, fugint de l’excés i connectant amb l’essencial. Volem contribuir a una cultura del joc més conscient, més lenta, més honesta amb els infants i amb el món que habiten.</p>
+          <p>Gràcies per ser aquí, per confiar i per creure —com nosaltres— que una altra manera de mirar i acompanyar la infància és possible.</p>
+          <p>Amb amor, Alba i Sandra</p>
         </div>
       </div>
-    </SectionContainer>
-    <SectionContainer id="us" title="SOBRE NOSALTRES">
-      <h2 class="font-bold text-2xl mb-8">Kokoro: Joguines sensibles, joguines amb sentit</h2>
-      <div class="flex flex-col-reverse gap-6 sm:grid md:grid-cols-6 mx-auto sm:gap-20">
-        <div class="col-span-3 flex flex-col gap-4">
-          <img src="/images/nosaltres.png" alt="kokoro's team between their product">
-        </div>
-        <div class="col-span-3">
-          <h3 class="font-bold mb-4">Qui som?</h3>
-          <div class="flex flex-col gap-8 text-pretty text-justify">
-            <p>Som l'Alba i la Sandra, mestres, pedagogues i amigues. Ens vam conèixer a l’escola on treballem, i des del primer moment vam descobrir que compartim la mirada  cap a la infància i l’educació, així com uns valors profunds: el respecte, l’amor pel procés, la creativitat i l’autenticitat. Som inquietes, curioses, apassionades pel que fem, i creiem que l’educació és una eina poderosa per transformar el món.</p>
-            <p>Fa més de deu anys que acompanyem infants en el seu camí de creixement, tant en l’àmbit ordinari com en l’àmbit de l’educació especial, atenent infants amb TEA (Trastorn de l’Espectre Autista). Som mestres en actiu, i és des d’aquesta experiència viscuda, diària i compromesa neix Kokoro: com una resposta, com una necessitat, com un somni compartit.</p>
-            <p>Kokoro és molt més que una marca de joguines. És una expressió del que vivim i creiem com a educadores. És una aposta per una infància escoltada, per materials que acompanyen amb sensibilitat i per un joc que fa créixer, connecta i transforma.</p>
-            <p>Cada joguina que dissenyem està impregnada de tot allò que hem après en aquests anys d'acompanyament: el valor de la paciència, la importància del ritme propi, la força del vincle i el poder del joc com a eina d’expressió i des de Kokoro, cada detall compta. Utilitzem materials naturals, sostenibles i cuidats, i dissenyem amb intenció i respecte, fugint de l’excés i connectant amb l’essencial. Volem contribuir a una cultura del joc més conscient, més lenta, més honesta amb els infants i amb el món que habiten.</p>
-            <p>Gràcies per ser aquí, per confiar i per creure —com nosaltres— que una altra manera de mirar i acompanyar la infància és possible.</p>
-            <p>Amb amor, Alba i Sandra</p>
-          </div>
-        </div>
-      </div>
-    </SectionContainer>
-    <SectionContainer id="cub" title="EL CUB">
-      <h2 class="font-bold text-2xl mb-8">El Cub de Kokoro</h2>
-      <div class="grid gap-6 sm:gap-20 md:grid-cols-6 mx-auto">
-        <div class="col-span-3">
-          <h3 class="font-bold mb-4">Què és el CUB?</h3>
-          <div class="text-pretty text-justify">
-            <p>El Cub és la nostra primera joguina.</p>
-            <p>És una joguina sensorial de fusta natural, dissenyada amb cura per oferir joc lliure i significatiu a totes les infàncies. Amb sis cares
-                plenes de textures, formes i obertures, convida a explorar, descobrir i connectar amb el joc d’una manera calmada i segura. Ideal per a infants de 0
-                a 6 anys i especialment enriquidor per a criatures amb necessitats diverses.</p>
-          </div>
-          <h3 class="font-bold my-4">Les cares del cub</h3>
-          <div class="flex flex-col gap-4 text-pretty text-justify">
-            <h4 class="text-[#FFD483] font-bold">Forats grans per amagar i descobrir objectes</h4>
-            <p>Aquests forats amplis conviden els infants a introduir i treure objectes de diferents mides. És una activitat que estimula el joc simbòlic, la noció de permanència de l’objecte i la sorpresa de la descoberta. També ajuda a treballar la coordinació ull–mà i la planificació dels moviments.</p>
-            <h4 class="text-[#FFD483] font-bold">Petits forats que desperten la curiositat</h4>
-            <p>Els forats més petits són una invitació a observar i experimentar. Els infants intentaran mirar-hi a través, introduir-hi els dits o petits objectes, cosa que desperta la seva curiositat natural. A més, aquests espais fomenten la paciència i l’atenció sostinguda.</p>
-            <h4 class="text-[#FFD483] font-bold">Barrots per observar des de diferents punts de vista</h4>
-            <p>Els barrots permeten als nens mirar l’interior del Cub com si fos una finestra. Aquesta obertura ofereix la possibilitat d’observar el que hi ha dins des de diferents angles i perspectives, estimulant la percepció visual i la creativitat. També conviden al joc de “veure i ser vist”, molt valorat en les primeres etapes del desenvolupament.</p>
-            <h4 class="text-[#FFD483] font-bold">Textures ondulades per explorar amb el tacte</h4>
-            <p>Les superfícies amb relleu i formes ondulades estan pensades perquè els infants les recorrin amb les mans. Aquesta experiència tàctil desenvolupa la sensibilitat, l’exploració sensorial i la capacitat de distingir diferents textures, afavorint la connexió entre el cos i l’entorn.</p>
-            <h4 class="text-[#FFD483] font-bold">Porteta per accedir als objectes amagats</h4>
-            <p>Una petita porta que s’obre i es tanca desperta la intriga i convida al joc de causa–efecte. Els infants poden amagar-hi objectes i recuperar-los després, cosa que estimula la memòria i el pensament lògic. A més, obrir i tancar la porteta treballa la motricitat fina i la força dels dits.</p>
-            <h4 class="text-[#FFD483] font-bold">Línies sensorials per seguir amb els dits</h4>
-            <p>Les línies gravades a la superfície del Cub guien els infants a recórrer-les amb els dits. Aquesta acció estimula la motricitat fina, la coordinació i el control dels moviments, a més d’afavorir la concentració i la relaxació. És una activitat senzilla però molt rica en beneficis.</p>
-          </div>
-          <div class="flex flex-col mt-4 gap-4 md:mt-10 xl:flex-row">
-            <div class="flex-1">
-              <a href="/documents/guia-tecnica.pdf" download class="block">
-                <button aria-label="download-instructions" class="w-full flex items-center gap-2 border cursor-pointer text-[#FFD483] px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FFD483] hover:text-white">
-                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m-1 8V6h2v4h3l-4 4l-4-4zm6 7H7v-2h10z"/>
-                  </svg>
-                  Descarregar fitxa tècnica
-                </button>
-              </a>
-            </div>
-            <div class="flex-1">
-              <a href="/documents/guia-pedagogica.pdf" download class="block">
-                <button aria-label="download-guide" class="w-full flex items-center gap-2 border cursor-pointer text-[#FFD483] px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FFD483] hover:text-white">
-                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10s10-4.49 10-10S17.51 2 12 2m-1 8V6h2v4h3l-4 4l-4-4zm6 7H7v-2h10z"/>
-                  </svg>
-                  Descarregar guia pedagògica
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class=" grid grid-cols-1 gap-4 max-w-xl mx-auto col-span-3 lg:grid-cols-1 xl:grid-cols-2">
-          <img src="/images/lateral-porta.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
-          <img src="/images/lateral-forats-barres.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
-          <img src="/images/lateral-mix.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
-          <img src="/images/lateral-barres.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
-          <img src="/images/lateral-forats.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
-          <img src="/images/kokoro2.png" alt="detail of cub's lateral" class="h-full object-cover w-full">
-        </div>
-      </div>
-    </SectionContainer>
-  </div>
+    </div>
+  </SectionContainer>
 </Layout>
