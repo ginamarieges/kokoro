@@ -1,13 +1,19 @@
-<header class="flex justify-between px-8 py-2 items-center w-full z-10 fixed bg-[#FFD483] min-h-24">
+<header
+  id="site-header"
+  class="flex justify-between px-8 py-2 items-center w-full z-10 fixed bg-[#FFD483] min-h-24
+         transition-all duration-300 will-change-transform
+         md:bg-[#FFD483]/70 md:backdrop-blur-md
+         md:-translate-y-full md:opacity-0"
+>
   <img src="/images/logo-kokoro.svg" width="80" height="80" class="sm:hidden" alt="kokoro's logo"/>
   <nav class="hidden text-white sm:flex flex-row gap-10 text-lg ">
     <a href="/#kokoro" class="hover:text-[#977b5f]">KOKORO</a>
     <a href="/#us" class="hover:text-[#977b5f]">NOSALTRES</a>
-    <a href="/cub" class="hover:text-[#977b5f]">EL CUB</a>
+    <a href="/#cub" class="hover:text-[#977b5f]">EL CUB</a>
     <a href="/contact" class="hover:text-[#977b5f]">CONTACTE</a>
   </nav>
   <button id="burguer-menu-button" aria-label="open-menu" class="sm:hidden" type="button">
-    <img src="/images/burguer.svg" alt="burguer menu icon" width=40 height=40>
+    <img src="/images/burguer.svg" alt="burguer menu icon" width="40" height="40">
   </button>
   <dialog 
     id="menu-dialog" 
@@ -20,12 +26,12 @@
       type="button"
       aria-label="close-menu"
       class="flex place-self-end py-4 sm:hidden">
-      <img src="/images/close.svg" alt="close menu icon" width=40 height=40>
+      <img src="/images/close.svg" alt="close menu icon" width="40" height="40">
     </button>
     <nav class="flex flex-col gap-14 w-full text-[#977b5f] items-center justify-center text-3xl flex-1">
       <a href="/#kokoro">KOKORO</a>
       <a href="/#us">NOSALTRES</a>
-      <a href="/cub">EL CUB</a>
+      <a href="/#cub">EL CUB</a>
       <a href="/contact">CONTACTE</a>
     </nav>
   </dialog>
@@ -41,10 +47,73 @@
     mobileMenu.open ? mobileMenu.close() : mobileMenu.showModal();
   };
   dialogLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileMenu.close();
+    link.addEventListener("click", () => {
+      mobileMenu.close();
+    });
   });
-});
   burguerMenuButton?.addEventListener('click', toggleMenu);
   closeMenuButton?.addEventListener('click', toggleMenu);
+  const headerEl = document.querySelector<HTMLElement>('#site-header');
+  const SHOW_THRESHOLD = 120;
+  const DELTA = 6;
+  let lastY = window.scrollY || 0;
+  let shown = false;
+  const mqLg = window.matchMedia('(min-width: 768px)'); 
+  function applyHidden() {
+    if (!headerEl) return; 
+    headerEl.classList.add('md:-translate-y-full', 'md:opacity-0');
+    headerEl.classList.remove('md:translate-y-0', 'md:opacity-100', 'md:shadow');
+    shown = false;
+  }
+  function applyShown() {
+    if (!headerEl) return; 
+    headerEl.classList.remove('md:-translate-y-full', 'md:opacity-0');
+    headerEl.classList.add('md:translate-y-0', 'md:opacity-100', 'md:shadow');
+    shown = true;
+  }
+  function onScroll() {
+    if (!mqLg.matches) return; 
+    const y = window.scrollY || 0;
+    const dy = y - lastY;
+    if (y < SHOW_THRESHOLD) {
+      if (shown) applyHidden();
+      lastY = y;
+      return;
+    }
+    if (Math.abs(dy) < DELTA) {
+      lastY = y;
+      return;
+    }
+    if (dy > 0) {
+      if (!shown) applyShown();
+    } else {
+      if (shown) applyHidden();
+    }
+    lastY = y;
+  }
+  function initHeaderState() {
+    if (mqLg.matches) {
+      if (window.scrollY > SHOW_THRESHOLD) {
+        applyShown(); 
+      } else {
+        applyHidden();
+      }
+    } else {
+    if (!headerEl) return; 
+      headerEl.classList.remove('md:-translate-y-full', 'md:opacity-0', 'md:translate-y-0', 'md:opacity-100');
+    }
+  }
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        onScroll();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+  mqLg.addEventListener('change', initHeaderState);
+  window.addEventListener('load', initHeaderState);
 </script>
+
