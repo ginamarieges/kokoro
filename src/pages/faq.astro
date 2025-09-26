@@ -1,0 +1,31 @@
+---
+import SectionContainer from "@/components/SectionContainer.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getCollection, render } from 'astro:content';
+
+const faqs = await getCollection('faqs');
+
+const faqsWithContent = await Promise.all(
+  faqs.map(async (faq) => {
+    const { data } = faq;
+    const { Content } = await render(faq);
+    return { question: data.question, Content };
+  })
+);
+---
+
+<Layout title="Preguntes freqüents">
+  <div class="pt-16 sm:pt-0">
+  <SectionContainer id="faq" title="Preguntes freqüents">
+    {
+      faqsWithContent.map(({ question, Content }) => (
+        <article class="mb-4 border border-[#FFD483] rounded-xl p-4">
+          <h2 class="font-semibold text-lg">{question}</h2>
+          <div><Content /></div>
+        </article>
+      ))
+    }
+  </SectionContainer>
+</div>
+</Layout>
+
