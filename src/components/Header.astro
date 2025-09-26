@@ -1,12 +1,12 @@
 <header
   id="site-header"
-  class="flex justify-between px-8 py-2 items-center w-full z-10 fixed bg-[#FFD483] min-h-24
+  class="flex justify-between px-8 py-2 items-center w-full z-10 fixed bg-[#FFD483]/70 min-h-16
          transition-all duration-300 will-change-transform
-         md:bg-[#FFD483]/70 md:backdrop-blur-md
-         md:-translate-y-full md:opacity-0"
+         sm:bg-[#FFD483]/70 sm:backdrop-blur-sm
+         sm:-translate-y-full sm:opacity-0 sm:justify-center"
 >
-  <img src="/images/logo-kokoro.svg" width="80" height="80" class="sm:hidden" alt="kokoro's logo"/>
-  <nav class="hidden text-white sm:flex flex-row gap-10 text-lg ">
+  <img src="/images/logo-kokoro.svg" width="40" height="40" class="sm:hidden" alt="kokoro's logo"/>
+  <nav class="hidden text-white sm:flex flex-row gap-10 text-lg lg:gap-16 ">
     <a href="/#kokoro" class="hover:text-[#977b5f]">KOKORO</a>
     <a href="/#us" class="hover:text-[#977b5f]">NOSALTRES</a>
     <a href="/#cub" class="hover:text-[#977b5f]">EL CUB</a>
@@ -20,7 +20,7 @@
     role="dialog"
     aria-label="menu dialog"
     aria-modal="true" 
-    class="flex flex-col bg-[#FFD483] px-8 py-2 z-50 max-w-full w-full max-h-full h-full translate-x-0 transition-discrete duration-300 sm:hidden starting:-translate-x-full [&:not([open])]:-translate-x-full">
+    class="flex flex-col bg-[#FFD483]/90 px-8 py-2 z-50 max-w-full w-full max-h-full h-full translate-x-0 transition-discrete duration-300 sm:hidden starting:-translate-x-full [&:not([open])]:-translate-x-full">
     <button 
       id="close-menu-button"
       type="button"
@@ -58,17 +58,17 @@
   const DELTA = 6;
   let lastY = window.scrollY || 0;
   let shown = false;
-  const mqLg = window.matchMedia('(min-width: 768px)'); 
+  const mqLg = window.matchMedia('(min-width: 640px)'); 
   function applyHidden() {
     if (!headerEl) return; 
-    headerEl.classList.add('md:-translate-y-full', 'md:opacity-0');
-    headerEl.classList.remove('md:translate-y-0', 'md:opacity-100', 'md:shadow');
+    headerEl.classList.add('sm:-translate-y-full', 'sm:opacity-0');
+    headerEl.classList.remove('sm:translate-y-0', 'sm:opacity-100', 'sm:shadow');
     shown = false;
   }
   function applyShown() {
     if (!headerEl) return; 
-    headerEl.classList.remove('md:-translate-y-full', 'md:opacity-0');
-    headerEl.classList.add('md:translate-y-0', 'md:opacity-100', 'md:shadow');
+    headerEl.classList.remove('sm:-translate-y-full', 'sm:opacity-0');
+    headerEl.classList.add('sm:translate-y-0', 'sm:opacity-100', 'sm:shadow');
     shown = true;
   }
   function onScroll() {
@@ -100,7 +100,7 @@
       }
     } else {
     if (!headerEl) return; 
-      headerEl.classList.remove('md:-translate-y-full', 'md:opacity-0', 'md:translate-y-0', 'md:opacity-100');
+      headerEl.classList.remove('sm:-translate-y-full', 'sm:opacity-0', 'sm:translate-y-0', 'sm:opacity-100');
     }
   }
   let ticking = false;
