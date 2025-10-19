@@ -6,11 +6,11 @@
          sm:-translate-y-full sm:opacity-0 sm:justify-center"
 >
   <img src="/images/logo-kokoro.svg" width="40" height="40" class="sm:hidden" alt="kokoro's logo"/>
-  <nav class="hidden text-white sm:flex flex-row gap-10 text-lg lg:gap-16 ">
-    <a href="/#kokoro" class="hover:text-[#977b5f]">KOKORO</a>
-    <a href="/#us" class="hover:text-[#977b5f]">NOSALTRES</a>
-    <a href="/#cub" class="hover:text-[#977b5f]">EL CUB</a>
-    <a href="/contact" class="hover:text-[#977b5f]">CONTACTE</a>
+  <nav class="hidden text-[#977b5f] sm:flex flex-row gap-10 text-lg lg:gap-16 ">
+    <a href="/#kokoro" class="hover:text-white">KOKORO</a>
+    <a href="/#us" class="hover:text-white">NOSALTRES</a>
+    <a href="/#cub" class="hover:text-white">EL CUB</a>
+    <a href="/contact" class="hover:text-white">CONTACTE</a>
   </nav>
   <button id="burguer-menu-button" aria-label="open-menu" class="sm:hidden" type="button">
     <img src="/images/burguer.svg" alt="burguer menu icon" width="40" height="40">
@@ -20,12 +20,12 @@
     role="dialog"
     aria-label="menu dialog"
     aria-modal="true" 
-    class="flex flex-col bg-[#FFD483]/90 px-8 py-2 z-50 max-w-full w-full max-h-full h-full translate-x-0 transition-discrete duration-300 sm:hidden starting:-translate-x-full [&:not([open])]:-translate-x-full">
+    class="flex flex-col bg-[#FFD483]/90 px-8 py-2 pt-inherit z-50 max-w-full w-full max-h-full h-full translate-x-0 transition-discrete duration-300 sm:hidden starting:-translate-x-full [&:not([open])]:-translate-x-full">
     <button 
       id="close-menu-button"
       type="button"
       aria-label="close-menu"
-      class="flex place-self-end py-4 sm:hidden">
+      class="flex place-self-end pt-2 sm:hidden">
       <img src="/images/close.svg" alt="close menu icon" width="40" height="40">
     </button>
     <nav class="flex flex-col gap-14 w-full text-[#977b5f] items-center justify-center text-3xl flex-1">
