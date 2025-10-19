@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@fontsource/schoolbell";
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +7,10 @@
 
 body {
   font-family: "Montserrat Variable", sans-serif;
+}
+
+h2 {
+  font-family: "Schoolbell", cursive;
 }
 
 @font-face {
