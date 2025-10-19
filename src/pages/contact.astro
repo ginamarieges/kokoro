@@ -4,42 +4,25 @@ import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="Contact">
-  <div class="pt-16 pb-12 sm:pt-16">
-    <div class="container mx-auto px-4 lg:px-8">
-      <section class="flex flex-col gap-10 min-h-screen pt-24 pb-12 lg:grid lg:grid-cols-5 gap-4 items-stretch">
-        <div class="bg-[url('/images/contacte-kokoro.png')] bg-cover bg-center col-span-2 h-full min-h-[20rem] rounded-2xl"></div>
-        <div class="sm:flex flex-col lg:col-span-3">
-          <div class="mb-10 text-center space-y-3 px-2">
-            <h2 class="text-[#FFD483] text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+  <div class="pt-16 sm:p-0">
+    <div class="mx-auto">
+      <section class="p-10 sm:px-20 lg:px-40 flex flex-col gap-10 min-h-screen md:grid md:grid-cols-5 gap-4 items-stretch">
+        <div class="bg-[url('/images/contacte-kokoro.png')] bg-cover bg-center col-span-2 h-full min-h-[20rem]"></div>
+        <div class="sm:flex flex-col md:col-span-3">
+          <div class="text-center">
+            <h2 class="mb-4 text-[#FFD483] text-3xl md:text-4xl font-bold leading-tight">
               Vols un cub?
             </h2>
-            <h3 class="text-[#FFD483] text-xl lg:text-2xl">
+            <p class="mb-3 text-[#977b5f] text-lg md:text-xl text-wrap">
               Si tens dubtes, curiositats o t’agradaria aconseguir el Cub Kokoro, escriu-nos. Ens encanta conversar i acompanyar de manera propera
-            </h3>
-          </div>
-          <div class="flex flex-col gap-4">
-            <!-- <div class="flex flex-col sm:justify-center w-full min-w-0 bg-[#FFD483] rounded-xl px-4 py-2 max-w-lg mx-auto">
-              <ul class="space-y-3 break-words">
-                <li>✉️ <a href="mailto:kokorojoguines@gmail.com">kokorojoguines@gmail.com</a></li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/kokoro.joguines/"
-                    aria-label="Kokoro instagram profile"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    /kokorojoguines
-                  </a>
-                </li>
-                <li>☎️ <a href="tel:+34675353632">675 35 36 32</a></li>
-              </ul>
-            </div> -->
-            <div class="max-w-lg min-w-0 mx-auto">
-              <ContactForm/>
-            </div>
+            </p>
+          </header>
+          <div class="mx-auto w-full max-w-lg">
+            <ContactForm />
           </div>
         </div>
-      </section>
+      </div>
     </div>
-  </div>
+  </section>
 </Layout>
+
