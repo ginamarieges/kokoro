@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.2.6",
+    "@fontsource/schoolbell": "^5.2.7",
     "@tailwindcss/vite": "^4.1.11",
     "aos": "^2.3.4",
     "astro": "^5.12.8",
