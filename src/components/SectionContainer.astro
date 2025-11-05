@@ -3,10 +3,11 @@ interface Props {
   id: string,
   title?: string,
   class?: string,
+  transition?: boolean
 }
-const {id, title, class: className } = Astro.props;
+const {id, title, class: className, transition } = Astro.props;
 ---
-<section id={id} class={`px-10 gap-4 mx-auto w-full py-10 sm:px-20 lg:px-40 ${className}`} data-aos="fade-up">
+<section id={id} class={`px-10 gap-4 mx-auto w-full py-10 sm:px-20 lg:px-40 ${className}`} data-aos={transition ? `fade-up` : ''}>
   <slot name="icon"></slot>
   {title && (
     <div class="flex items-center gap-4 mb-6">
